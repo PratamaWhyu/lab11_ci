@@ -1,3 +1,4 @@
+<h1>Praktikum 1 </h1>
 <h2>Instalasi Codeigniter 4</h2>
 Untuk melakukan instalasi Codeigniter 4 dapat dilakukan dengan dua cara, yaitu cara manual
 dan menggunakan composer. Pada praktikum ini kita menggunakan cara manual.
@@ -37,3 +38,138 @@ Selanjutnya adalah membuat Controller Page. Buat file baru dengan nama page.php 
 direktori Controller kemudian isi kodenya seperti berikut.
 
 ![image](https://github.com/user-attachments/assets/975b4a8d-8a21-476c-8f15-44d054ff2a04)
+
+<h2>Membuat View</h2>
+Selanjutnya membuat view untuk tampilan web agar lebih menarik. Buat file baru
+dengan nama about.php pada direktori view (app/view/about.php) kemudian isi kodenya
+seperti berikut.
+![image](https://github.com/user-attachments/assets/671f2346-cbfc-4c66-89ce-e1a7ce97628a)
+Ubah method about pada class Controller Page menjadi seperti berikut:
+
+![image](https://github.com/user-attachments/assets/1abbda1c-dd3f-4097-9b6a-c54ff52b979e)
+Kemudian lakukan refresh pada halaman tersebut.
+
+![image](https://github.com/user-attachments/assets/a3f0fbdd-b3e3-4ce2-ba2a-57338263ef06)
+
+<h2>Membuat Layout Web dengan CSS</h2>
+
+Pada dasarnya layout web dengan css dapat diimplamentasikan dengan mudah pada codeigniter. Yang perlu diketahui adalah, pada Codeigniter 4 file yang menyimpan asset css dan javascript terletak pada direktori public.  
+
+Buat file css pada direktori public dengan nama style.css
+
+Kemudian buat folder template pada direktori view kemudian buat file header.php dan
+footer.php
+
+![image](https://github.com/user-attachments/assets/71426429-282f-4649-9817-625e2194f5c5)
+
+File app/view/template/footer.php
+![image](https://github.com/user-attachments/assets/b1eb3594-0a71-4ae7-8196-268048c7734e)
+
+Kemudian ubah file app/view/about.php seperti berikut.
+![image](https://github.com/user-attachments/assets/ab67bb24-1897-46d4-8577-6a8a6afe8773)
+
+Selanjutnya refresh tampilan pada alamat http://localhost:8080/about
+![image](https://github.com/user-attachments/assets/9092def0-a215-461d-a0c9-463241d081ef)
+
+<h1>Praktikum 2</h1>
+
+
+<h2>Membuat Database</h2>
+
+![image](https://github.com/user-attachments/assets/d60c51a5-fdfc-4856-a031-72189ac64ba2)
+
+<h2>Membuat Tabel</h2>
+
+![image](https://github.com/user-attachments/assets/4119786e-d550-49bf-8902-2468b7bf9db1)
+
+<h2>Konfigurasi koneksi database</h2>
+Selanjutnya membuat konfigurasi untuk menghubungkan dengan database server. Konfigurasi
+dapat dilakukan dengan du acara, yaitu pada file app/config/database.php atau menggunakan
+file .env. Pada praktikum ini kita gunakan konfigurasi pada file .env.
+
+![image](https://github.com/user-attachments/assets/c3da290e-ba29-41d3-aaf1-20342dc66624)
+
+<h2>Membuat Model</h2>
+Selanjutnya adalah membuat Model untuk memproses data Artikel. Buat file baru pada
+direktori app/Models dengan nama ArtikelModel.php
+
+![image](https://github.com/user-attachments/assets/73f42fc4-543e-457e-8cd1-2ad3002e0179)
+
+<h2>Membuat Controller</h2>
+Buat Controller baru dengan nama Artikel.php pada direktori app/Controllers.
+
+![image](https://github.com/user-attachments/assets/9d5a4116-244a-42ba-a931-e47d858859a2)
+
+<h2>Membuat View</h2>
+Buat direktori baru dengan nama artikel pada direktori app/views, kemudian buat file baru
+dengan nama index.php.
+
+![image](https://github.com/user-attachments/assets/3b3c33f6-9154-4ae5-9189-dd513e8169cf)
+
+Selanjutnya buka browser kembali, dengan mengakses url http://localhost:8080/artikel
+
+![image](https://github.com/user-attachments/assets/ea50159b-412c-4fa1-8070-175de52ad843)
+
+Belum ada data yang diampilkan. Kemudian coba tambahkan beberapa data pada database agar
+dapat ditampilkan datanya.
+![image](https://github.com/user-attachments/assets/a517a2ef-07f2-4488-8996-7b0724cc4621)
+
+![image](https://github.com/user-attachments/assets/ad320465-20b3-47fa-9ed8-5e6c1923f540)
+
+<h2>Membuat Tampilan Detail Artikel</h2>
+Tampilan pada saat judul berita di klik maka akan diarahkan ke halaman yang berbeda.
+Tambahkan fungsi baru pada Controller Artikel dengan nama view().
+
+![image](https://github.com/user-attachments/assets/2247d161-3648-49f3-bf27-3278be2c9ee9)
+
+<h2>Membuat View Detail</h2>
+Buat view baru untuk halaman detail dengan nama app/views/artikel/detail.php.
+
+![image](https://github.com/user-attachments/assets/5140496e-da89-4fd7-a943-828411d61b31)
+
+<h2>Membuat Routing untuk artikel detail</h2>
+Buka Kembali file app/config/Routes.php, kemudian tambahkan routing untuk artikel detail.
+
+![image](https://github.com/user-attachments/assets/d8e7e803-a966-45f2-8c20-7a03b0eb1d46)
+![image](https://github.com/user-attachments/assets/63a4072c-0740-484b-82ff-bb46717d4af6)
+
+<h2>Membuat Menu Admin</h2>
+Menu admin adalah untuk proses CRUD data artikel. Buat method baru pada Controller
+Artikel dengan nama admin_index().
+
+![image](https://github.com/user-attachments/assets/31cf32b5-12c8-4b6e-91f9-bbd5dd0e3095)
+Selanjutnya buat view untuk tampilan admin dengan nama admin_index.php
+
+![admin_index](https://github.com/user-attachments/assets/7ecf937c-0e78-46ba-a4e7-715f30ce4021)
+Tambahkan routing untuk menu admin seperti berikut:
+![image](https://github.com/user-attachments/assets/be0a8287-e125-4878-82cd-274c13873f67)
+Akses menu admin dengan url http://localhost:8080/admin/artikel
+
+![image](https://github.com/user-attachments/assets/d0a04239-32c9-4e0c-a83a-52d3e5cd01f9)
+
+<h2>Menambah Data Artikel</h2>
+Tambahkan fungsi/method baru pada Controller Artikel dengan nama add().
+
+![image](https://github.com/user-attachments/assets/4d103890-c321-4b31-9913-bda24d86f612)
+Kemudian buat view untuk form tambah dengan nama form_add.php
+
+![image](https://github.com/user-attachments/assets/5cea8670-358f-4b2a-8e54-151df33bb6c8)
+
+![image](https://github.com/user-attachments/assets/c77367e5-1cea-4638-8b24-14a68b991675)
+
+<h2>Mengubah Data</h2>
+Tambahkan fungsi/method baru pada Controller Artikel dengan nama edit().
+
+![image](https://github.com/user-attachments/assets/bab09b74-ae3f-497a-928e-799914faf3d0)
+Kemudian buat view untuk form tambah dengan nama form_edit.php
+
+![image](https://github.com/user-attachments/assets/d4d95818-c024-44bf-89d0-753360934cbd)
+
+![image](https://github.com/user-attachments/assets/e92e670c-5ca8-4542-9f0a-b0d46316b0f6)
+
+
+<h2>Menghapus Data</h2>
+
+![image](https://github.com/user-attachments/assets/79d073c7-e82a-4b7f-a8ad-37f7686231ae)
+
+<h1>Praktikum 3</h1>
