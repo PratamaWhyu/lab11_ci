@@ -173,3 +173,56 @@ Kemudian buat view untuk form tambah dengan nama form_edit.php
 ![image](https://github.com/user-attachments/assets/79d073c7-e82a-4b7f-a8ad-37f7686231ae)
 
 <h1>Praktikum 3</h1>
+<h2>Membuat Layout Utama</h2>
+Buat folder layout di dalam app/Views/
+Buat file main.php di dalam folder layout dengan kode berikut:
+
+![main](https://github.com/user-attachments/assets/227410e6-d7c8-46d6-8ad6-ec3ba9e2fd67)
+
+<h2>Modifikasi File View</h2>
+Ubah app/Views/home.php agar sesuai dengan layout baru:
+
+![image](https://github.com/user-attachments/assets/53bc1f91-af45-4043-828f-fe2fc43399b4)
+
+<h2>Membuat Class View Cell</h2>
+
+Buat folder Cells di dalam app/
+Buat file ArtikelTerkini.php di dalam app/Cells/ dengan kode berikut:
+
+![image](https://github.com/user-attachments/assets/3c9eaf50-ca00-4d6d-a3c7-1afcc6e01595)
+
+<h2>Membuat View untuk View Cell</h2>
+Buat folder components di dalam app/Views/
+Buat file artikel_terkini.php di dalam app/Views/components/ dengan kode berikut:
+
+![image](https://github.com/user-attachments/assets/3e716454-238a-4f62-9691-afe67600ed39)
+
+<h2>Pertanyaan dan Tugas</h2>
+Menambahkan tanggal tujuan agar mendapatkan data artikel yang baru di ubah
+
+![image](https://github.com/user-attachments/assets/313b69f7-f993-4487-82ce-22c9817fb689)
+
+contohnya seperti ini :
+
+![image](https://github.com/user-attachments/assets/88d73672-4819-47fa-8d32-1c22c1b740a7)
+
+Apa manfaat utama dari penggunaan View Layout dalam pengembangan aplikasi?
+jawab : 
+1. Struktur yang Terorganisir
+  - Memudahkan pengaturan elemen UI dengan tata letak yang rapi dan terstruktur.
+
+2. Responsivitas yang Lebih Baik
+  - Memastikan tampilan UI menyesuaikan dengan berbagai ukuran layar dan orientasi perangkat.
+
+3. Pemeliharaan Kode yang Lebih Mudah
+  - Dengan pemisahan tata letak dan logika bisnis, perubahan UI lebih mudah dilakukan tanpa mengganggu fungsionalitas aplikasi.
+    
+4. Penggunaan Ulang Komponen
+  - Layout dapat digunakan kembali di berbagai bagian aplikasi, mengurangi redundansi kode.
+
+5. Kinerja yang Lebih Optimal
+  - Beberapa jenis layout dioptimalkan untuk performa yang lebih baik, seperti ConstraintLayout di Android yang mengurangi jumlah view hierarchy.
+
+Jelaskan perbedaan antara View Cell dan View biasa.
+jawab : 
+![image](https://github.com/user-attachments/assets/3f08a236-4d3c-4d34-ab79-991e4f154339)
