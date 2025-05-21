@@ -299,3 +299,13 @@ Tambahkan method logout pada Controller User seperti berikut:
 
 
 <h1>Praktikum 5</h1>
+<h2>Membuat Pagination</h2>
+
+Untuk membuat pagination, buka Kembali Controller Artikel, kemudian modifikasi kode
+pada method admin_index seperti berikut.
+
+![image](https://github.com/user-attachments/assets/20bf9ca3-cd4d-4d93-9cc4-ae44f4d134f2)
+
+Kemudian buka file views/artikel/admin_index.php dan tambahkan kode berikut
+dibawah deklarasi tabel data.
+![image](https://github.com/user-attachments/assets/d06c3198-622a-4d3e-9920-c100d6e5ed0d)
