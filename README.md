@@ -226,3 +226,76 @@ jawab :
 Jelaskan perbedaan antara View Cell dan View biasa.
 jawab : 
 ![image](https://github.com/user-attachments/assets/3f08a236-4d3c-4d34-ab79-991e4f154339)
+
+<h1>Praktikum 4</h1>
+
+<h2>Membuat Tabel: User Login</h2>
+Tabel User
+
+![image](https://github.com/user-attachments/assets/ae30a455-e465-4ad2-ae7f-a2acff72ff74)
+
+<h2>Membuat Model User</h2>
+Selanjutnya adalah membuat Model untuk memproses data Login. Buat file baru pada direktori
+app/Models dengan nama UserModel.php
+
+![image](https://github.com/user-attachments/assets/bbe1c108-5f53-415f-b132-67630bfbc444)
+<h2>Membuat Controller User</h2>
+Buat Controller baru dengan nama User.php pada direktori app/Controllers. Kemudian
+tambahkan method index() untuk menampilkan daftar user, dan method login() untuk proses
+login.
+
+![yap](https://github.com/user-attachments/assets/fb72c817-9b87-41f9-bec8-d2ad6bcdc613)
+
+<h2>Membuat View Login</h2>
+Buat direktori baru dengan nama user pada direktori app/views, kemudian buat file baru
+dengan nama login.php.
+
+![viewlogin](https://github.com/user-attachments/assets/7bacd792-d081-4658-911c-91ff88d44b1e)
+
+<h2>Membuat Database Seeder</h2>
+Database seeder digunakan untuk membuat data dummy. Untuk keperluan ujicoba modul
+login, kita perlu memasukkan data user dan password kedaalam database. Untuk itu buat
+database seeder untuk tabel user. Buka CLI, kemudian tulis perintah berikut:
+
+![image](https://github.com/user-attachments/assets/685c8490-f6da-4eac-8c63-e1432164c758)
+
+Selanjutnya, buka file UserSeeder.php yang berada di lokasi direktori
+/app/Database/Seeds/UserSeeder.php kemudian isi dengan kode berikut:
+
+![image](https://github.com/user-attachments/assets/9c37ba37-d2af-4060-a93c-b4fcd842b00d)
+
+Selanjutnya buka kembali CLI dan ketik perintah berikut:
+
+![image](https://github.com/user-attachments/assets/b008ba1c-950a-4ab3-8e0a-8e65ea8d8bad)
+Uji Coba Login
+Selanjutnya buka url http://localhost:8080/user/login seperti berikut:
+
+![image](https://github.com/user-attachments/assets/38860883-4ccb-4f86-84bd-8a6c312e0645)
+
+<h2>Menambahkan Auth Filter</h2>
+Selanjutnya membuat filer untuk halaman admin. Buat file baru dengan nama Auth.php pada
+direktori app/Filters.
+
+![image](https://github.com/user-attachments/assets/558296dc-0751-4003-ba79-3899a008574f)
+
+Selanjutnya buka file app/Config/Filters.php tambahkan kode berikut:
+'auth' => App\Filters\Auth::class
+![image](https://github.com/user-attachments/assets/7d4eb2f6-fe80-4f00-9047-76d240b7e8d5)
+
+Selanjutnya buka file app/Config/Routes.php dan sesuaikan kodenya.
+
+![image](https://github.com/user-attachments/assets/7d8874ba-821c-4803-9f40-b9c7e0cb06ca)
+
+<h2>Percobaan Akses Menu Admin</h2>
+Buka url dengan alamat http://localhost:8080/admin/artikel ketika alamat tersebut diakses
+maka, akan dimuculkan halaman login.
+
+![image](https://github.com/user-attachments/assets/ab0d1daa-3b91-48dd-8078-5a6a48809e50)
+
+<h2>Fungsi Logout</h2>
+Tambahkan method logout pada Controller User seperti berikut:
+
+![image](https://github.com/user-attachments/assets/858aa56a-345f-4806-b0e1-6d36bf2cb01b)
+
+
+<h1>Praktikum 5</h1>
