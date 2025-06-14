@@ -300,12 +300,22 @@ Tambahkan method logout pada Controller User seperti berikut:
 
 <h1>Praktikum 5</h1>
 <h2>Membuat Pagination</h2>
-
-Untuk membuat pagination, buka Kembali Controller Artikel, kemudian modifikasi kode
+Pagination merupakan proses yang digunakan untuk membatasi tampilan yang panjang 
+dari data yang banyak pada sebuah website. Fungsi pagination adalah memecah tampilan 
+menjadi beberapa halaman tergantung banyaknya data yang akan ditampilkan pada 
+setiap halaman. 
+Untuk membuat pagination dan pencarian, buka Kembali Controller Artikel, kemudian modifikasi kode
 pada method admin_index seperti berikut.
 
-![image](https://github.com/user-attachments/assets/20bf9ca3-cd4d-4d93-9cc4-ae44f4d134f2)
+![image](https://github.com/user-attachments/assets/1bf7502b-b5b5-4fee-b711-165e68bc0a17)
 
 Kemudian buka file views/artikel/admin_index.php dan tambahkan kode berikut
-dibawah deklarasi tabel data.
-![image](https://github.com/user-attachments/assets/d06c3198-622a-4d3e-9920-c100d6e5ed0d)
+
+![image](https://github.com/user-attachments/assets/00e28ac7-9013-428f-9e55-fac5dc78b62e)
+
+![image](https://github.com/user-attachments/assets/a5febd03-e172-4907-94f6-4b0765e35ffa)
+
+Selanjutnya buka kembali menu daftar artikel, tambahkan data lagi untuk melihat 
+hasilnya.
+
+![image](https://github.com/user-attachments/assets/c2fbbede-49e3-46fd-9d30-5380f8b2a935)
