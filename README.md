@@ -319,3 +319,24 @@ Selanjutnya buka kembali menu daftar artikel, tambahkan data lagi untuk melihat
 hasilnya.
 
 ![image](https://github.com/user-attachments/assets/c2fbbede-49e3-46fd-9d30-5380f8b2a935)
+
+<h1>Praktikum 6</h1>
+
+<h2>Upload Gambar pada Artikel </h2>
+Menambahkan fungsi unggah gambar pada tambah artikel.  
+Buka kembali Controller Artikel pada project sebelumnya, sesuaikan kode pada method 
+add seperti berikut: 
+
+![add](https://github.com/user-attachments/assets/7f2f80ba-cb27-4ea3-ae1b-f4817c671274)
+
+ 
+Kemudian pada file views/artikel/form_add.php tambahkan field input file seperti 
+berikut. 
+
+![addpict](https://github.com/user-attachments/assets/ff502615-a95e-45ac-8448-305f045b2cfb)
+Dan sesuaikan tag form dengan menambahkan ecrypt type seperti berikut.
+![formaction](https://github.com/user-attachments/assets/0c7b2543-8474-4fc3-881e-d94c7c21f20e)
+Ujicoba file upload dengan mengakses menu tambah artikel. 
+![image](https://github.com/user-attachments/assets/0e8a7c83-ae01-4c06-a3b0-7b2b5668cc82)
+
+<h1>Praktikum 7</h1>
